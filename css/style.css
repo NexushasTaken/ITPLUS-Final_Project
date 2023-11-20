@@ -1,0 +1,25 @@
+:root[data-theme="light"] {
+  --text: #090401;
+  --background: #f5f5f5;
+  --background-lighten: #f0f0f0; 
+  --background-lighten2x: #ebebeb; 
+  --background-harden: #fafafa; 
+  --primary: #0d4268;
+  --secondary: #e8eafc;
+  --accent: #34e5d6;
+}
+:root[data-theme="dark"] {
+  --text: #fef9f6;
+  --background: #0b0b0b;
+  --background-lighten: #0f0f0f; 
+  --background-lighten2x: #141414; 
+  --background-harden: #050505; 
+  --primary: #97ccf2;
+  --secondary: #030517;
+  --accent: #1acbbc;
+}
+
+body {
+  font-family: Ubuntu, sans-serif;
+  margin: 0px;
+}
