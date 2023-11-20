@@ -1,0 +1,29 @@
+.wrapper {
+  background-size: cover;
+  background-image: url("../images/background.jpg");
+}
+
+.title {
+  font-size: 4rem;
+}
+
+.gameplay,
+.infinite-game-question {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.text .fa {
+  font-size: 10rem;
+  margin: 0px;
+}
+
+.info {
+  background-size: cover;
+  background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("../images/background-1.jpg");
+}
+
+.info > div:nth-child(even) {
+  background-color: black;
+}
