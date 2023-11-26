@@ -1,17 +1,31 @@
-.toggle,
-.play,
-.about,
-.download {
+.actions {
+  position: fixed;
+  bottom: 1rem;
+  left: 50%;
+  transform: translate(-50%, 0%);
+
+  padding: 0.4rem 0.4rem;
   display: flex;
-  align-items: center;
+  flex-direction: row;
   justify-content: center;
-  border-radius: 1rem;
-  width: 2rem;
-  height: 2rem;
-  cursor: pointer;
-  &:hover {
-    background-color: var(--primary);
-    color: var(--background);
+  align-items: center;
+  margin-top: auto;
+  background-color: var(--background);
+  border-radius: 2rem;
+
+  & > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1rem;
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer;
+
+    &:hover {
+      background-color: var(--primary);
+      color: var(--background);
+    }
   }
 }
 
@@ -21,13 +35,21 @@
   accent-color: var(--accent);
 }
 
-.info div {
-  padding: 2rem 2rem;
-}
-
 .info {
   background-color: black;
   max-width: 70rem;
+
+  & > div:nth-child(even) {
+    background-color: black;
+  }
+
+  & > div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 4rem;
+    gap: 2rem;
+  }
 }
 
 .wrapper {
@@ -37,8 +59,16 @@
   place-items: center;
 }
 
+.wrapper,
+.info {
+  background-position: center center;
+  background-size: cover;
+}
+
 .title {
   text-align: center;
+  font-size: 4rem;
+  margin-top: 0px;
 }
 
 .nav {
@@ -56,7 +86,7 @@
   font-weight: bold;
 }
 
-.icon img {
+.icon > img {
   width: 2.6rem;
 }
 
@@ -66,14 +96,14 @@
   padding: 1rem;
   justify-content: center; 
   align-items: center;
-  width: 100vw;
-  background-color: var(--background-harden);
-  .btn {
+
+  & > .btn {
     text-decoration: none;
     color: inherit;
     padding: 0.5rem;
     margin: 4px 1rem;
     border-radius: 4px;
+
     &:hover {
       cursor: pointer;
       background-color: var(--primary);
@@ -82,18 +112,7 @@
   }
 }
 
-.actions {
-  position: fixed;
-  bottom: 1rem;
-  left: 50%;
-  transform: translate(-50%, 0%);
-
-  padding: 0.4rem 0.4rem;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  margin-top: auto;
-  background-color: var(--background);
-  border-radius: 2rem;
+.text > .fa {
+  font-size: 10rem;
+  margin: 0px;
 }
