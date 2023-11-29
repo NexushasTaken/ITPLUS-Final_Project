@@ -1,8 +1,14 @@
+/* body { */
+/*   overflow: hidden; */
+/* } */
+/**/
 .actions {
   position: fixed;
   bottom: 1rem;
   left: 50%;
   transform: translate(-50%, 0%);
+  z-index: 2;
+  color: var(--text);
 
   padding: 0.4rem 0.4rem;
   display: flex;
@@ -27,17 +33,28 @@
       color: var(--background);
     }
   }
+}
 
-  /* #login-toggle:checked + .login-box { */
-  /*   top: 50vh; */
-  /*   transform: translate(-50%, -50%); */
-  /* } */
+.login-box {
+  transition: transform 0.4s, top 0.4s;
+  z-index: 1;
+}
+
+#login-toggle:checked + .login-box {
+  top: 50%;
+  transform: translate(-50%, -50%);
+  & + .actions + .page {
+    filter: brightness(50%);
+  }
 }
 
 .page {
   color: var(--text);
   background-color: var(--background-lighten);
   accent-color: var(--accent);
+  overflow-y: scroll;
+  height: 100vh;
+  transition: filter 0.4s;
 }
 
 .info {
@@ -79,6 +96,7 @@
 
 .nav {
   margin: 0px;
+  top: 0px;
 
   position: sticky;
   background-color: var(--background);
