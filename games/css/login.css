@@ -10,7 +10,7 @@
   box-sizing: border-box;
   box-shadow: 0 15px 25px rgba(0,0,0,.6);
   border-radius: 10px;
-  transition: filter 1s, transform 1s, bottom 1s;
+  transition: filter 0.4s, transform 0.4s, bottom 0.4s;
   z-index: 1;
 }
 
