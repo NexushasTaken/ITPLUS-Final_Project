@@ -13,7 +13,7 @@
   background-color: var(--background);
   border-radius: 2rem;
 
-  & > div {
+  & > div > * {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -27,6 +27,11 @@
       color: var(--background);
     }
   }
+
+  /* #login-toggle:checked + .login-box { */
+  /*   top: 50vh; */
+  /*   transform: translate(-50%, -50%); */
+  /* } */
 }
 
 .page {
@@ -61,6 +66,7 @@
 
 .wrapper,
 .info {
+  background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
 }
@@ -115,4 +121,9 @@
 .text > .fa {
   font-size: 10rem;
   margin: 0px;
+}
+
+a.fa {
+  text-decoration: none;
+  color: white;
 }

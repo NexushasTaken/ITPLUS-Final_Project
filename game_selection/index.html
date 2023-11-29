@@ -9,8 +9,8 @@
   </head>
   <body>
     <main class='top_bg'>
-      <ul class='slider'>
-        <li class='item' style="background-image: url('')">
+      <ul class='slider' id="slider">
+        <li class='item' style="background-image: url('images/galaga_background.jpg')">
           <div class='content'>
             <h2 class='title'>Galaga</h2>
             <p class='description'>
@@ -18,7 +18,7 @@
               top-down shooter style. Its gameplay involves shooting down enemy ships and dodging their attacks to survive through
               increasingly challenging waves.
             </p>
-            <a href="">Read More</a>
+            <a href="../games/galaga/index.html">Read More</a>
           </div>
         </li>
         <li class='item' style="background-image: url('images/tetris_background.jpg')">
@@ -31,33 +31,28 @@
             <a href="../games/tetris/index.html">Read More</a>
           </div>
         </li>
-        <li class='item' style="background-image: url('https://theawesomer.com/photos/2017/07/simon_stalenhag_the_electric_state_6.jpg')">
+        <li class='item' style="background-image: url('images/doom_background.jpg')">
           <div class='content'>
-            <h2 class='title'>"Urban Decay"</h2>
+            <h2 class='title'>Doom</h2>
             <p class='description'>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore fuga voluptatum, iure corporis inventore praesentium nisi. Id laboriosam ipsam enim.
+              Doom is a first-person shooter game developed and published by id
+              Software. Released on December 10, 1993, for DOS, it is the first
+              installment in the Doom franchise. The player assumes the role of a
+              space marine, later unofficially referred to as Doomguy, fighting
+              through hordes of undead humans and invading demons.
             </p>
-            <a href="">Read More</a>
+            <a href="../games/doom/index.html">Read More</a>
           </div>
         </li>
-        <li class='item' style="background-image: url('')">
+        <li class='item' style="background-image: url('images/pacman_background.jpg')">
           <div class='content'>
-            <h2 class='title'>Galaga</h2>
+            <h2 class='title'>Pacman</h2>
             <p class='description'>
-              Galaga is a classic arcade game from the '80s where players control a spaceship, battling swarms of alien enemies in a
-              top-down shooter style. Its gameplay involves shooting down enemy ships and dodging their attacks to survive through
-              increasingly challenging waves.
+                Space Invaders[b] is a 1978 shoot 'em up arcade video game developed and released by Taito in Japan, and licensed to
+                Midway Manufacturing for overseas distribution. Space Invaders was the first fixed shooter and set the template for the
+                genre. T
             </p>
-            <a href="">Read More</a>
-          </div>
-        </li>
-        <li class='item' style="background-image: url('images/tetris_background.jpg')">
-          <div class='content'>
-            <h2 class='title'>Tetris</h2>
-            <p class='description'> Lorem ipsum, dolor sit amet consectetur
-            adipisicing elit. Tempore fuga voluptatum, iure corporis inventore
-            praesentium nisi. Id laboriosam ipsam enim.  </p>
-            <a href="">Read More</a>
+            <a href="../games/pacman/index.html">Read More</a>
           </div>
         </li>
       </ul>
@@ -67,6 +62,11 @@
       </nav>
     </main>
 
+    <script>
+      const slider_node = document.getElementById("slider");
+      slider_node.append(slider_node.children[0].cloneNode(true));
+      slider_node.append(slider_node.children[1].cloneNode(true));
+    </script>
     <script src="js/script.js"></script>
   </body>
 </html>

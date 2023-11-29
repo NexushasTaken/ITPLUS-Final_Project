@@ -1,0 +1,7 @@
+.wrapper {
+  background-image: url("../images/background.jpg");
+}
+
+.info {
+  background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("../images/background-1.jpg");
+}
